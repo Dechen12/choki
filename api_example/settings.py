@@ -50,6 +50,7 @@ INSTALLED_APPS = [
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
+     'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
@@ -91,12 +92,12 @@ DATABASES = {
 #       'NAME': BASE_DIR / 'db.sqlite3',
 #    }
    
-    'default':{
+    'default': {
        'ENGINE':'django.db.backends.postgresql_psycopg2',
-        'NAME': 'dt87n66mg114e',
-        'USER': 'fhzvtfsdouyhzy',
-        'PASSWORD':'c617442d650b327acfc3cb6052fdd1ede1005bfb2f8c6ec721dd80a2d6d46cfc',
-        'HOST': 'ec2-54-172-219-6.compute-1.amazonaws.com',
+        'NAME': 'd23b9ng9hqh7qd',
+        'USER': 'vbvzhawdhbaeke',
+        'PASSWORD':'4f4187cb89390d42d147462e6e15b71a05fbb9f05ee86bfc5609e13a7d6b14c2',
+        'HOST': 'ec2-18-211-41-246.compute-1.amazonaws.com',
         'PORT': '5432',
     }
 }
