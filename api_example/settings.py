@@ -50,7 +50,7 @@ INSTALLED_APPS = [
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
-     'whitenoise.middleware.WhiteNoiseMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
@@ -86,21 +86,21 @@ WSGI_APPLICATION = 'api_example.wsgi.application'
 # https://docs.djangoproject.com/en/4.0/ref/settings/#databases
 
 DATABASES = {
-#     'default': {
-#      'ENGINE': 'django.db.backends.sqlite3',
-     
-#       'NAME': BASE_DIR / 'db.sqlite3',
-#    }
-   
     'default': {
-       'ENGINE':'django.db.backends.postgresql_psycopg2',
-        'DATABASE': 'd23b9ng9hqh7qd',
-        'USER': 'vbvzhawdhbaeke',
-        'NAME': 'rudidb',
-        'PASSWORD': '4f4187cb89390d42d147462e6e15b71a05fbb9f05ee86bfc5609e13a7d6b14c2',
-        'HOST': 'ec2-18-211-41-246.compute-1.amazonaws.com',
-        'PORT': '5432',
-    }
+     'ENGINE': 'django.db.backends.sqlite3',
+     
+      'NAME': BASE_DIR / 'db.sqlite3',
+   }
+   
+    # 'default': {
+    #    'ENGINE':'django.db.backends.postgresql_psycopg2',
+    #     'DATABASE': 'd23b9ng9hqh7qd',
+    #     'USER': 'vbvzhawdhbaeke',
+    #     'NAME': 'rudidb',
+    #     'PASSWORD': '4f4187cb89390d42d147462e6e15b71a05fbb9f05ee86bfc5609e13a7d6b14c2',
+    #     'HOST': 'ec2-18-211-41-246.compute-1.amazonaws.com',
+    #     'PORT': '5432',
+    # }
 }
 
 
